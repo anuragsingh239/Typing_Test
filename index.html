@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Test</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="mainDiv">
@@ -26,11 +18,39 @@
         <textarea id="mywords" cols="100" rows="10" placeholder="Remember, be nice!"></textarea>
         
         <br>
-        <button type="button" id="btn" class="btn btn-success">Start</button>
+        <button type="button" id="btn" class="mainbtn">Start</button>
     
         </div>
     </div>
-        
+
+    <script>
+        const setofwords = [
+"My name is Anurag Singh and I am a developer.",
+
+"Hope you are having fun this is a simple game you can make.", 
+"If you want the source code then link is given in the description so you can create your own version of this challenge."
+
+];
+ const msg = document.getElementById('msg');
+
+ const typewords= document.getElementById('mywords');
+
+ const btn = document.getElementById('btn');
+
+let startTime, endTime;
+playgame=()=>{
+    
+}
+btn.addEventListener('click',function(){
+    if(this.innerText=='Start'){
+        typewords.disabled=false;
+        playgame();
+    }
+
+});
+
+
+    </script>
         
         
        
